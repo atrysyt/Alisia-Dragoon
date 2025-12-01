@@ -1,0 +1,522 @@
+/* ================================
+   Base structure (shared styles)
+   ================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px 12px 40px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  color: #e5e7eb; /* will be overridden by themes if needed */
+}
+
+/* Layout wrappers */
+
+.page-header {
+  max-width: 960px;
+  margin: 0 auto 24px;
+  padding: 16px 20px;
+  border-radius: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Branding / header */
+
+.brand {
+  font-size: 1.7rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brand-dot {
+  color: #ffffff;
+}
+
+.video-title {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Sections */
+
+.credits-section {
+  margin-bottom: 24px;
+  padding: 16px 18px 20px;
+  border-radius: 12px;
+}
+
+.section-title {
+  margin: 0 0 6px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+}
+
+.section-body {
+  margin-top: 6px;
+}
+
+/* Subheaders inside sections */
+
+.subheader {
+  margin: 18px 0 4px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.contact-placeholder {
+  margin: 8px 0 0;
+  font-size: 0.95rem;
+}
+
+/* ================================
+   Credit blocks (base layout only)
+   ================================ */
+
+.credit-block {
+  padding: 16px;
+  margin: 14px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.55);
+}
+
+/* Title */
+.credit-title {
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+/* Description text */
+.credit-description {
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+/* Source link */
+.source-text {
+  display: inline-block;
+  margin-bottom: 4px;
+  padding-left: 8px;
+  border-left: 3px solid transparent;
+  text-decoration: none;
+}
+
+/* Attribution text */
+.attribution-text {
+  line-height: 1.5;
+  padding-left: 8px;
+  border-left: 3px solid transparent;
+}
+
+/* ================================
+   Theme 1: Base (ATRYS blue)
+   Applied via: .credits-theme-base on <body>
+   ================================ */
+
+.credits-theme-base {
+  background: #0a0d16;
+}
+
+.credits-theme-base .page-header {
+  background: rgba(10, 16, 32, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.7);
+}
+
+.credits-theme-base .brand {
+  color: #6ae0ff;
+  text-shadow: 0 0 8px rgba(106, 224, 255, 0.8);
+}
+
+.credits-theme-base .video-title {
+  color: #cbd5f5;
+}
+
+.credits-theme-base .credits-section {
+  background: rgba(4, 9, 24, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.credits-theme-base .section-title {
+  color: #e5e7eb;
+}
+
+.credits-theme-base .subheader {
+  color: #9ca3ff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.credits-theme-base .contact-placeholder {
+  color: #cbd5f5;
+}
+
+/* Credit block colors */
+
+.credits-theme-base .credit-block {
+  background: #0f1422;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.credits-theme-base .credit-title {
+  font-size: 1.1rem;
+  color: #6ae0ff;
+  text-shadow: 0 0 8px rgba(106, 224, 255, 0.55);
+}
+
+.credits-theme-base .credit-description {
+  font-size: 0.98rem;
+  color: #e8f6ff;
+}
+
+.credits-theme-base .source-text {
+  font-size: 0.9rem;
+  color: #a7c7dd;
+  border-left-color: #6ae0ff;
+}
+
+.credits-theme-base .source-text:hover {
+  color: #d9edff;
+  text-decoration: underline;
+}
+
+.credits-theme-base .attribution-text {
+  font-size: 0.9rem;
+  color: #b0d8ff;
+  border-left-color: #ffffff44;
+}
+
+/* ===================================
+   Theme 2: High Contrast
+   Applied via: .credits-theme-high-contrast on <body>
+   =================================== */
+
+.credits-theme-high-contrast {
+  background: #000000;
+  color: #ffffff;
+}
+
+.credits-theme-high-contrast .page-header {
+  background: #000000;
+  border: 2px solid #ffffff;
+  box-shadow: none;
+}
+
+.credits-theme-high-contrast .brand {
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.credits-theme-high-contrast .video-title {
+  color: #ffffff;
+}
+
+.credits-theme-high-contrast .credits-section {
+  background: #000000;
+  border: 2px solid #ffffff;
+  box-shadow: none;
+}
+
+.credits-theme-high-contrast .section-title {
+  color: #fffb00;
+}
+
+.credits-theme-high-contrast .subheader {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+.credits-theme-high-contrast .contact-placeholder {
+  color: #ffffff;
+}
+
+/* Credit block colors */
+
+.credits-theme-high-contrast .credit-block {
+  background: #000000;
+  border: 2px solid #ffffff;
+  box-shadow: none;
+}
+
+.credits-theme-high-contrast .credit-title {
+  font-size: 1.15rem;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.credits-theme-high-contrast .credit-description {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.credits-theme-high-contrast .source-text {
+  font-size: 0.98rem;
+  color: #fffb00;
+  border-left-color: #fffb00;
+}
+
+.credits-theme-high-contrast .source-text:hover {
+  text-decoration: underline;
+}
+
+.credits-theme-high-contrast .attribution-text {
+  font-size: 0.98rem;
+  color: #ffffff;
+  border-left-color: #ffffff;
+}
+
+/* ==========================================
+   Theme 3: Accessible / Colorblind-friendly
+   Applied via: .credits-theme-accessible on <body>
+   ========================================== */
+
+.credits-theme-accessible {
+  background: #1f130f;
+  color: #fdf3e7;
+}
+
+.credits-theme-accessible .page-header {
+  background: #261712;
+  border: 1px solid #f5d0a1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.credits-theme-accessible .brand {
+  color: #ffd27a;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+}
+
+.credits-theme-accessible .video-title {
+  color: #f7e0c2;
+}
+
+.credits-theme-accessible .credits-section {
+  background: #281912;
+  border: 1px solid #f5d0a1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.credits-theme-accessible .section-title {
+  color: #ffd27a;
+}
+
+.credits-theme-accessible .subheader {
+  color: #ffe0a3;
+  border-bottom: 1px solid #f5d0a1;
+}
+
+.credits-theme-accessible .contact-placeholder {
+  color: #f7e0c2;
+}
+
+/* Credit block colors */
+
+.credits-theme-accessible .credit-block {
+  background: #1f130f;
+  border: 1px solid #f5d0a1;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.credits-theme-accessible .credit-title {
+  font-size: 1.2rem;
+  color: #ffd27a;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+}
+
+.credits-theme-accessible .credit-description {
+  font-size: 1.02rem;
+  color: #fdf3e7;
+}
+
+.credits-theme-accessible .source-text {
+  font-size: 0.98rem;
+  color: #f5d0a1;
+  border-left-color: #ffb347;
+}
+
+.credits-theme-accessible .source-text:hover {
+  text-decoration: underline;
+}
+
+.credits-theme-accessible .attribution-text {
+  font-size: 0.98rem;
+  color: #f7e0c2;
+  border-left-color: #f59e0b;
+}
+
+/* ================================
+   Theme switcher buttons
+   ================================ */
+
+.theme-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Neutral base; themes change surrounding colors, but buttons stay readable */
+.theme-buttons button {
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid #9ca3af;
+  background: #111827;
+  color: #f9fafb;
+  cursor: pointer;
+  font-size: 0.85rem;
+  line-height: 1.3;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: background 0.15s ease, transform 0.05s ease, box-shadow 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.theme-buttons button:hover {
+  background: #1f2937;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+  transform: translateY(-1px);
+}
+
+/* Keep focus ring obvious for keyboard users */
+.theme-buttons button:focus-visible {
+  outline: 2px solid #f97316;
+  outline-offset: 2px;
+}
+
+/* Slight tweaks per theme for the button border/background */
+
+.credits-theme-base .theme-buttons button {
+  background: #020617;
+  border-color: #4b5563;
+}
+
+.credits-theme-base .theme-buttons button:hover {
+  background: #020617;
+  border-color: #6ae0ff;
+  box-shadow: 0 0 8px rgba(106, 224, 255, 0.6);
+}
+
+.credits-theme-high-contrast .theme-buttons button {
+  background: #000000;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.credits-theme-high-contrast .theme-buttons button:hover {
+  background: #111111;
+  border-color: #fffb00;
+}
+
+.credits-theme-accessible .theme-buttons button {
+  background: #2b1a14;
+  border-color: #f5d0a1;
+  color: #fdf3e7;
+}
+
+.credits-theme-accessible .theme-buttons button:hover {
+  background: #3a1f16;
+  border-color: #ffb347;
+}
+
+/* Responsive tweaks */
+
+@media (max-width: 640px) {
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .brand {
+    font-size: 1.5rem;
+  }
+
+  .video-title {
+    font-size: 0.95rem;
+  }
+}
+
+/* Contact section box */
+
+.contact-box {
+  margin-top: 8px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.contact-text {
+  margin: 0 0 8px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.contact-text:last-child {
+  margin-bottom: 0;
+}
+
+.contact-email {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Theme-specific email colors */
+
+.credits-theme-base .contact-email {
+  color: #6ae0ff;
+  text-shadow: 0 0 4px rgba(106, 224, 255, 0.65);
+}
+
+.credits-theme-base .contact-email:hover {
+  text-decoration: underline;
+}
+
+.credits-theme-high-contrast .contact-box {
+  background: #000;
+  border-color: #fff;
+}
+
+.credits-theme-high-contrast .contact-text {
+  color: #ffffff;
+}
+
+.credits-theme-high-contrast .contact-email {
+  color: #fffb00;
+}
+
+.credits-theme-high-contrast .contact-email:hover {
+  text-decoration: underline;
+}
+
+.credits-theme-accessible .contact-box {
+  background: #261712;
+  border-color: #f5d0a1;
+}
+
+.credits-theme-accessible .contact-text {
+  color: #f7e0c2;
+}
+
+.credits-theme-accessible .contact-email {
+  color: #ffd27a;
+}
+
+.credits-theme-accessible .contact-email:hover {
+  text-decoration: underline;
+}
