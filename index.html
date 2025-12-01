@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Alisia Dragoon – Credits & Sources | ATRYS.YT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Full credits and sources for the ATRYS.YT video on Alisia Dragoon, including image, video, logo, and research citations."
+    />
+
+    <style>
+      :root {
+        --bg: #050814;
+        --bg-alt: #0b1022;
+        --accent: #6ae0ff;
+        --accent-soft: rgba(106, 224, 255, 0.2);
+        --accent-strong: #b0f3ff;
+        --text: #e3f4ff;
+        --muted: #a5b4d4;
+        --border-soft: rgba(106, 224, 255, 0.25);
+        --border-subtle: rgba(106, 224, 255, 0.15);
+        --max-width: 1100px;
+        --radius-lg: 18px;
+        --radius-pill: 999px;
+      }
+
+      /* High-contrast theme */
+      body[data-theme="high-contrast"] {
+        --bg: #000000;
+        --bg-alt: #111111;
+        --accent: #fffb00;
+        --accent-soft: rgba(255, 251, 0, 0.2);
+        --accent-strong: #fffbe0;
+        --text: #ffffff;
+        --muted: #dddddd;
+        --border-soft: rgba(255, 255, 255, 0.6);
+        --border-subtle: rgba(255, 255, 255, 0.3);
+      }
+
+      /* Colorblind-friendly theme (less blue-reliant, more orange/teal contrast) */
+      body[data-theme="colorblind"] {
+        --bg: #18110f;
+        --bg-alt: #251814;
+        --accent: #ffb347; /* orange */
+        --accent-soft: rgba(255, 179, 71, 0.25);
+        --accent-strong: #ffe0a3;
+        --text: #f9f4ec;
+        --muted: #d6c7b8;
+        --border-soft: rgba(255, 179, 71, 0.4);
+        --border-subtle: rgba(255, 179, 71, 0.25);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        background: radial-gradient(
+          circle at top,
+          #111634 0,
+          #050814 50%,
+          #020310 100%
+        );
+        color: var(--text);
+        -webkit-font-smoothing: antialiased;
+        font-size: 18px; /* bumped up base font size */
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        padding: 24px 12px 48px;
+      }
+
+      body[data-theme="high-contrast"],
+      body[data-theme="colorblind"] {
+        background: var(--bg);
+      }
+
+      .page {
+        width: 100%;
+        max-width: var(--max-width);
+      }
+
+      header {
+        border-radius: var(--radius-lg);
+        padding: 20px 22px 24px;
+        background: linear-gradient(
+          135deg,
+          rgba(106, 224, 255, 0.08),
+          rgba(16, 24, 48, 0.95)
+        );
+        border: 1px solid var(--border-soft);
+        box-shadow: 0 0 14px rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(10px);
+      }
+
+      body[data-theme="high-contrast"] header,
+      body[data-theme="colorblind"] header {
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.04),
+          rgba(15, 15, 15, 0.98)
+        );
+      }
+
+      .brand-row {
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+
+      .brand {
+        font-size: 1.9rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--accent-strong);
+        text-shadow: 0 0 4px rgba(0, 0, 0, 0.9),
+          0 0 14px rgba(106, 224, 255, 0.9);
+      }
+
+      body[data-theme="high-contrast"] .brand {
+        text-shadow: 0 0 4px rgba(0, 0, 0, 0.9),
+          0 0 10px rgba(255, 255, 255, 0.9);
+      }
+
+      body[data-theme="colorblind"] .brand {
+        text-shadow: 0 0 4px rgba(0, 0, 0, 0.9),
+          0 0 14px rgba(255, 179, 71, 0.9);
+      }
+
+      .brand span.dot {
+        color: #ffffff;
+      }
+
+      .tagline {
+        font-size: 0.95rem;
+        color: var(--muted);
+        max-width: 460px;
+      }
+
+      .video-title {
+        margin-top: 10px;
+        font-size: 1.1rem;
+        color: var(--accent-strong);
+        text-shadow: 0 0 6px rgba(106, 224, 255, 0.8);
+      }
+
+      body[data-theme="colorblind"] .video-title {
+        text-shadow: 0 0 6px rgba(255, 179, 71, 0.8);
+      }
+
+      .top-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 10px;
+      }
+
+      .nav-pills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        font-size: 0.9rem;
+      }
+
+      .nav-pills a {
+        text-decoration: none;
+        color: var(--accent-strong);
+        border-radius: var(--radius-pill);
+        padding: 6px 12px;
+        border: 1px solid var(--border-soft);
+        background: rgba(3, 7, 20, 0.7);
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.8),
+          0 0 12px rgba(106, 224, 255, 0.25);
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      body[data-theme="high-contrast"] .nav-pills a,
+      body[data-theme="colorblind"] .nav-pills a {
+        background: rgba(10, 10, 10, 0.9);
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.8),
+          0 0 10px rgba(255, 255, 255, 0.2);
+      }
+
+      .nav-pills a span.bullet {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--accent-strong);
+        box-shadow: 0 0 6px rgba(106, 224, 255, 0.8);
+      }
+
+      .nav-pills a:hover {
+        background: rgba(20, 32, 72, 0.95);
+      }
+
+      body[data-theme="high-contrast"] .nav-pills a:hover,
+      body[data-theme="colorblind"] .nav-pills a:hover {
+        background: rgba(40, 40, 40, 1);
+      }
+
+      .accessibility-controls {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        font-size: 0.8rem;
+        justify-content: flex-end;
+      }
+
+      .accessibility-controls span.label {
+        color: var(--muted);
+        align-self: center;
+        margin-right: 4px;
+      }
+
+      .accessibility-controls button {
+        border: 1px solid var(--border-soft);
+        background: rgba(3, 7, 20, 0.9);
+        color: var(--text);
+        padding: 4px 10px;
+        border-radius: 999px;
+        cursor: pointer;
+        font-size: 0.8rem;
+        line-height: 1.4;
+      }
+
+      .accessibility-controls button[aria-pressed="true"] {
+        background: var(--accent-soft);
+        border-color: var(--accent-strong);
+        font-weight: 600;
+      }
+
+      main {
+        margin-top: 18px;
+      }
+
+      section {
+        margin-top: 24px;
+        padding: 18px 18px 22px;
+        border-radius: var(--radius-lg);
+        background: linear-gradient(
+          155deg,
+          rgba(8, 14, 35, 0.98),
+          rgba(3, 6, 20, 0.98)
+        );
+        border: 1px solid rgba(12, 18, 40, 0.9);
+        box-shadow: 0 0 16px rgba(0, 0, 0, 0.7);
+      }
+
+      body[data-theme="high-contrast"] section,
+      body[data-theme="colorblind"] section {
+        background: var(--bg-alt);
+        border-color: var(--border-soft);
+      }
+
+      section + section {
+        margin-top: 28px;
+      }
+
+      section h2 {
+        margin: 0 0 10px;
+        font-size: 1.35rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--accent-strong);
+        text-shadow: 0 0 10px rgba(106, 224, 255, 0.8);
+      }
+
+      body[data-theme="high-contrast"] section h2 {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+      }
+
+      body[data-theme="colorblind"] section h2 {
+        text-shadow: 0 0 10px rgba(255, 179, 71, 0.9);
+      }
+
+      .section-subtitle {
+        margin: 0 0 14px;
+        color: var(--muted);
+        font-size: 0.96rem;
+        line-height: 1.6;
+      }
+
+      .subgroup {
+        margin-top: 18px;
+        padding-top: 10px;
+        border-top: 1px solid var(--border-subtle);
+      }
+
+      .subgroup:first-of-type {
+        border-top: none;
+        padding-top: 6px;
+      }
+
+      .subgroup-title {
+        font-size: 1.02rem;
+        font-weight: 600;
+        margin: 4px 0 8px;
+        color: var(--accent);
+        text-shadow: 0 0 6px rgba(106, 224, 255, 0.7);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      .credit-block {
+        padding: 10px 0 12px;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+      }
+
+      .credit-block:first-of-type {
+        border-top: none;
+        padding-top: 4px;
+      }
+
+      .credit-title {
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 0 0 3px;
+        color: var(--accent-strong);
+        text-shadow: 0 0 6px rgba(106, 224, 255, 0.7);
+      }
+
+      .credit-body {
+        margin: 0 0 5px;
+        font-size: 0.9rem;
+        line-height: 1.7;
+        color: var(--text);
+      }
+
+      .credit-meta {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-size: 0.84rem;
+        color: var(--muted);
+      }
+
+      .credit-meta li + li {
+        margin-top: 2px;
+      }
+
+      .credit-meta strong {
+        font-weight: 600;
+        color: var(--accent-strong);
+      }
+
+      a {
+        color: var(--accent-strong);
+        text-decoration: none;
+        border-bottom: 1px solid rgba(106, 224, 255, 0.45);
+        padding-bottom: 1px;
+      }
+
+      a:hover {
+        border-bottom-color: rgba(255, 255, 255, 0.9);
+        text-shadow: 0 0 6px rgba(106, 224, 255, 0.8);
+      }
+
+      body[data-theme="colorblind"] a {
+        border-bottom-color: rgba(255, 179, 71, 0.6);
+      }
+
+      body[data-theme="colorblind"] a:hover {
+        text-shadow: 0 0 6px rgba(255, 179, 71, 0.9);
+      }
+
+      .note {
+        font-size: 0.86rem;
+        color: var(--muted);
+        margin-top: 10px;
+        line-height: 1.7;
+      }
+
+      footer {
+        margin-top: 22px;
+        font-size: 0.82rem;
+        color: var(--muted);
+        text-align: center;
+      }
+
+      footer .divider {
+        margin: 12px auto;
+        width: 90px;
+        height: 1px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          var(--accent-strong),
+          transparent
+        );
+        box-shadow: 0 0 10px var(--accent-strong);
+      }
+
+      code {
+        font-family: "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+        font-size: 0.82rem;
+        background: rgba(9, 16, 34, 0.9);
+        padding: 2px 6px;
+        border-radius: 5px;
+        border: 1px solid rgba(106, 224, 255, 0.25);
+      }
+
+      body[data-theme="high-contrast"] code,
+      body[data-theme="colorblind"] code {
+        background: #111;
+        border-color: var(--border-soft);
+      }
+
+      @media (max-width: 640px) {
+        header {
+          position: static;
+        }
+        .top-row {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .accessibility-controls {
+          justify-content: flex-start;
+        }
+      }
+    </style>
+  </head>
+  <body data-theme="default">
+    <div class="page">
+      <header>
+        <div class="brand-row">
+          <div class="brand">ATRYS<span class="dot">.</span>YT</div>
+          <div class="tagline">
+            Deep-dive retrospectives on the games, studios, and stories that
+            shaped us.
+          </div>
+        </div>
+        <div class="video-title">
+          Alisia Dragoon – Video Credits, Media Attribution & Research Sources
+        </div>
+
+        <div class="top-row">
+          <nav class="nav-pills" aria-label="Page navigation">
+            <a href="#used-on-screen"
+              ><span class="bullet"></span> Used on Screen</a
+            >
+            <a href="#information-sources"
+              ><span class="bullet"></span> Information Sources</a
+            >
+            <a href="#notes"
+              ><span class="bullet"></span> Notes &amp; Contact</a
+            >
+          </nav>
+
+          <div
+            class="accessibility-controls"
+            aria-label="Theme and accessibility options"
+          >
+            <span class="label">Theme:</span>
+            <button
+              type="button"
+              data-theme-choice="default"
+              aria-pressed="true"
+            >
+              Default
+            </button>
+            <button
+              type="button"
+              data-theme-choice="high-contrast"
+              aria-pressed="false"
+            >
+              High Contrast
+            </button>
+            <button
+              type="button"
+              data-theme-choice="colorblind"
+              aria-pressed="false"
+            >
+              Colorblind-Friendly
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <!-- Used On Screen -->
+        <section id="used-on-screen">
+          <h2>Used on Screen</h2>
+          <p class="section-subtitle">
+            This section documents logos, box art, magazine scans, stock
+            footage, and other visual materials that appear in the video. All
+            trademarks, logos, and artwork remain the property of their
+            respective owners and are used here for purposes of commentary,
+            criticism, scholarship, and historical documentation.
+          </p>
+
+          <!-- Logos -->
+          <div class="subgroup">
+            <div class="subgroup-title">Logos &amp; Marks</div>
+
+            <div class="credit-block">
+              <h3 class="credit-title">Square Enix Logo</h3>
+              <p class="credit-body">
+                Vector version of the Square Enix wordmark shown in the video in
+                reference to Game Arts’ later corporate history.
+              </p>
+              <ul class="credit-meta">
+                <li>
+                  <strong>Source:</strong>
+                  <a
+                    href="https://commons.wikimedia.org/wiki/File:Square_Enix_logo.svg"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Wikimedia Commons – Square Enix logo.svg
+                  </a>
+                </li>
+                <li>
+                  <strong>Author / Rights:</strong>
+                  Vector by User:GaeMFreeK, based on the Square Enix logo. The
+                  source page describes the file as public domain in the United
+                  States as a simple logo / familiar symbol. Please see the
+                  Commons description for details.
+                </li>
+                <li>
+                  <strong>Additional Reference:</strong>
+                  <a
+                    href="https://download.logo.wine/logo/Square_Enix/Square_Enix-Logo.wine.png"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Logo.wine – Square Enix PNG
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="credit-block">
+              <h3 class="credit-title">Koei Tecmo Logo</h3>
+              <p class="credit-body">
+                Company logo referenced in the context of Japanese publishers
+                and corporate relationships.
+              </p>
+              <ul class="credit-meta">
+                <li>
+                  <strong>Source:</strong>
+                  <a
+                    href="https://commons.wikimedia.org/wiki/File:Koei_Tecmo_Holdings_logo.svg"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Wikimedia Commons – Koei Tecmo Holdings logo.svg
+                  </a>
+                </li>
+                <li>
+                  <strong>Author / Rights:</strong>
+                  Koei Tecmo Holdings. The file is listed on Commons as public
+                  domain (see source page for full details).
+                </li>
+              </ul>
+            </div>
+
+            <div class="credit-block">
+              <h3 class="credit-title">Game Arts Logo</h3>
+              <p class="credit-body">
+                Company logo shown when introducing Game Arts and their catalog
+                of work.
+              </p>
+              <ul class="credit-meta">
+                <li>
+                  <strong>Source:</strong>
+                  <a
+                    href="https://commons.wikimedia.org/wiki/File:Game_Arts_logo.svg"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Wikimedia Commons – Game Arts logo.svg
+                  </a>
+                </li>
+                <li>
+                  <strong>Author / Rights:</strong>
+                  Game Arts / respective rights holders. See the Commons page
+                  for licensing notes.
+                </li>
+              </ul>
+            </div>
+
+            <div class="credit-block">
+              <h3 class="credit-title">Bandai Namco Logo</h3>
+              <p class="credit-body">
+                Bandai Namco logo shown as part of the broader context of
+                Japanese publishers.
+              </p>
+              <ul class="credit-meta">
+                <li>
+                  <strong>Source:</strong>
+                  <a
+                    href="https://download.logo.wine/logo/Bandai_Namco_Entertainment/Bandai_Namco_Entertainment-Logo.wine.png"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Logo.wine – Bandai Namco Entertainment logo
+                  </a>
+                </li>
+                <li>
+                  <strong>Author / Rights:</strong>
+                  © Bandai Namco Entertainment Inc. Used for reference and
+                  commentary.
+                </li>
+              </ul>
+            </div>
+
+            <div class="credit-block">
+              <h3 class="credit-title">Weekly Famitsu Logo</h3>
+              <p class="credit-body">
+                Weekly Famitsu logo used when discussing review scores and
+                magazine coverage.
+              </p>
+              <ul class="credit-meta">
+                <li>
+                  <strong>Source:</strong>
+                  <a
+                    href="https://retrocdn.net/File:WeeklyFamitsu_logo_1996.svg"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    RetroCDN – Weekly Famitsu logo (1996)
+                  </a>
+                </li>
+                <li>
+                  <strong>Author / Rights:</strong>
+                  © Enterbrain / Kadokawa / respective rights holders. Used
+                  under fair use for commentary and historical context.
+                </li>
+              </ul>
+            </div>
+
+            <div class="credit-block">
+              <h3 class="credit-title">Studio Gainax Logo</h3>
+              <p class="credit-body">
+                Gainax logo shown in the section covering Daicon Film, Gainax,
+                and their relationship to Game Arts.
+              </p>
+              <ul class="credit-meta">
+                <li>
+                  <strong>Source:</strong>
+                  <a
+                    href="https://commons.wikimedia.org/wiki/File:Gainax_logo.svg"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Wikimedia Commons – Gainax logo.svg
+                  </a>
+                  (curid: 52856122)
+                </li>
+                <li>
+                  <strong>Author / Rights:</strong>
+                  Vector author “ツンヅくん,” based on an original Gainax logo
+                  image. The Commons entry lists the file as public domain; see
+                  source page for details.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Box Art & Game Imagery -->
+          <div class="subgroup">
+            <div class="subgroup-title">
+              Box Art, Key Art &amp; Game Packaging
+            </div>
+
+            <div class="credit-block">
+              <h3 class="credit-title">
+                Sonic the Hedgehog 2 (Genesis) – Box Art
+              </h3>
+              <p class="credit-body">
+                Used as visual context when discussing the Sega Genesis library
+                around the time of Alisia Dragoon.
+              </p>
+              <ul class="credit-meta">
+                <li>
+                  <strong>Image Source:</strong>
+                  <a
+                    href="https://archive.org/details/SonicTheHedgehogSegaGenesisHiResScans"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    “Sonic the Hedgehog (Sega Genesis) – Hi-Res Scans” –
+                    Internet Archive
+                  </a>
+                </li>
+                <li>
+                  <strong>Rights:</strong>
+                  © SEGA 1991–1992. Used under a fair use rationale (U.S.) for
+                  commentary, review, and historical context in the ATRYS.YT
+                  documentary.
+                </li>
+              </ul>
+            </div>
+
+            <div class="credit-block">
+              <h3 class="credit-title">
+                Sonic the Hedgehog (Genesis) – Box Art
+              </h3>
+              <p class="credit-body">
+                Shown to illustrate Sega’s early-’90s branding and to situate
+                Alisia Dragoon within the broader Sega lineup.
+              </p>
+              <ul class="credit-meta">
+                <li>
+                  <strong>Image Source:</strong>
+                  <a
+                    href="https://archive.org/details/SonicTheHedgehogSegaGenesisHiResScans"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    “Sonic the Hedgehog (Sega Genesis) – Hi-Res Scans” –
+                    Internet Archive
+                  </a>
+                </li>
+                <li>
+                  <strong>Rights:</strong>
+                  © SEGA 1991. Used under fair use (U.S.) for commentary,
+                  review, and historical context.
+                </li>
+              </ul>
+            </div>
+
+            <div class="credit-block">
+              <h3 class="credit-title">
+                Thexder 2 / Fire Hawk: Thexder – The Second Contact (Box Art)
+              </h3>
+              <p class="credit-body">
+                Box art used when discussing Game Arts’ earlier work and the
+                lineage leading up to Alisia Dragoon.
+              </p>
+              <ul class="credit-meta">
+                <li>
+                  <strong>Image Source:</strong>
+                  <a
+                    href="https://upload.wikimedia.org/wikipedia/commons/8/8c/SierraOnLine-Box-Thexder2.jpg"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Wikimedia Commons – SierraOnLine-Box-Thexder2.jpg
+                  </a>
+                </li>
+                <li>
+                  <strong>Author / Rights:</strong>
+                  Box art by Sierra On-Line. The Commons file is licensed under
+                  <a
+                    href="https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    CC BY-SA 4.0 </a
+                  >.
+                </li>
+              </ul>
+            </div>
+
+            <div class="credit-block">
+              <h3 class="credit-title">Thexder Logo (from Box Art)</h3>
+              <p class="credit-body">
+                Logo extracted from Thexder box art for use in visual
+                comparisons and historical commentary.
+              </p>
+              <ul class="credit-meta">
+                <li>
+                  <strong>Source:</strong>
+                  Box art from <em>Thexder</em> (Game Arts, 1985) as hosted on
+                  Wikipedia / related archives.
+                </li>
+                <li>
+                  <strong>Rights:</strong>
+                  © Game Arts / respective rights holders. Used under fair use
+                  for commentary and historical analysis. Cropped from the
+                  original box art.
+                </li>
+              </ul>
+            </div>
+
+            <div class="credit-block">
+              <h3 class="credit-title">
+                Alisia Dragoon (Japanese Mega Drive) – Box Art
+              </h3>
+              <p class="credit-body">
+                Japanese Mega Drive box art used prominently when discussing the
+                game’s release and visual identity.
+              </p>
+              <ul class="credit-meta">
+                <li>
+                  <strong>Image Source:</strong>
+                  <a
+                    href="https://segaretro.org/File:AlisiaDragoon_MD_JP_Box.jpg"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Sega Retro – AlisiaDragoon_MD_JP_Box.jpg
+                  </a>
+                </li>
+                <li>
+                  <strong>Rights:</strong>
+                  This is a scan of Sega Mega Drive video game packaging.
+                  Copyright remains with the companies who developed and
+                  published the game. Presented here under a fair use rationale
+                  for commentary, review, and historical reference. Cropped for
+                  clarity in the video.
+                </li>
+              </ul>
+            </div>
+
+            <div class="credit-block">
+              <h3 class="credit-title">Streets of Rage – Box Art</h3>
+              <p class="credit-body">
+                Used briefly to illustrate Sega’s broader action game lineup on
+                the Mega Drive / Genesis.
+              </p>
+              <ul class="credit-meta">
+                <li>
+                  <strong>Image Source:</strong>
+                  <a
+                    href="https://segaretro.org/images/4/47/Sor_md_us_cover.jpg"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Sega Retro – Sor_md_us_cover.jpg
+                  </a>
+                </li>
+                <li>
+                  <strong>Rights:</strong>
+                  © SEGA / respective rights holders. Used under fair use for
+                  commentary and historical context.
+                </li>
+              </ul>
+            </div>
+
+            <div class="credit-block">
+              <h3 class="credit-title">Streets of Rage 2 – Box Art</h3>
+              <p class="credit-body">
+                Shown alongside other Sega titles to place Alisia Dragoon within
+                the console’s 16-bit era library.
+              </p>
+              <ul class="credit-meta">
+                <li>
+                  <strong>Image Source:</strong>
+                  <a
+                    href="https://segaretro.org/File:SoR2_MD_US_Box.jpg"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Sega Retro – SoR2_MD_US_Box.jpg
+                  </a>
+                </li>
+                <li>
+                  <strong>Rights:</strong>
+                  © SEGA / respective rights holders. Used under fair use for
+                  commentary and historical context.
+                </li>
+              </ul>
+            </div>
+
+            <div class="credit-block">
+              <h3 class="credit-title">Thunder Force IV – Box Art</h3>
+              <p class="credit-body">
+                Used as part of a visual comparison with other high-profile
+                action and shooting games on Mega Drive.
+              </p>
+              <ul class="credit-meta">
+                <li>
+                  <strong>Image Source:</strong>
+                  <a
+                    href="https://segaretro.org/images/1/1c/ThunderForce4_MD_US_Box.jpg"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Sega Retro – ThunderForce4_MD_US_Box.jpg
+                  </a>
+                </li>
+                <li>
+                  <strong>Rights:</strong>
+                  © Technosoft / SEGA / respective rights holders. Used under
+                  fair use for commentary and historical context.
+                </li>
+              </ul>
+            </div>
+
+            <div class="credit-block">
+              <h3 class="credit-title">Shining Force – Box Art</h3>
+              <p class="credit-body">
+                Appears in segments that highlight the breadth of Sega’s
+                first-party and partner titles around Alisia Dragoon’s release
+                window.
+              </p>
+              <ul class="credit-meta">
+                <li>
+                  <strong>Image Source:</strong>
+                  <a
+                    href="https://segaretro.org/File:Shining_Force_MD_US_Box.jpg"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Sega Retro – Shining_Force_MD_US_Box.jpg
+                  </a>
+                </li>
+                <li>
+                  <strong>Rights:</strong>
+                  © SEGA / Camelot / respective rights holders. Used under fair
+                  use for commentary and historical context.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- City / Osaka Footage & Photos -->
+          <div class="subgroup">
+            <div class="subgroup-title">
+              City Footage &amp; Osaka Aerials (Vecteezy)
+            </div>
+
+            <div class="credit-block">
+              <h3 class="credit-title">
+                Osaka Aerial Photo – Kyocera Dome &amp; Rail Lines
+              </h3>
+              <p class="credit-body">
+                Wide aerial view of Osaka, Japan, used as a backdrop when
+                discussing Japanese industry and context.
+              </p>
+              <ul class="credit-meta">
+                <li>
+                  <strong>Source:</strong>
+                  <a
+                    href="https://www.vecteezy.com/photo/72766649-a-wide-aerial-view-shows-osaka-japan-with-kyocera-dome-osaka-near-center-rail-lines-and-gridded-streets-mid-rise-blocks-and-high-rises-in-soft-hazy-afternoon-light"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Vecteezy – Osaka aerial photo (Kyocera Dome)
+                  </a>
+                </li>
+                <li>
+                  <strong>License:</strong>
+                  Used under Vecteezy licensing. Marked as “No Attribution
+                  Required”; credit included here for transparency.
+                </li>
+              </ul>
+            </div>
+
+            <div class="credit-block">
+              <h3 class="credit-title">
+                Osaka Aerial Photo – High-rises, Roads &amp; River Channel
+              </h3>
+              <p class="credit-body">
+                Aerial view of Osaka cityscape, used for establishing shots
+                around discussion of Japanese studios and publishers.
+              </p>
+              <ul class="credit-meta">
+                <li>
+                  <strong>Source:</strong>
+                  <a
+                    href="https://www.vecteezy.com/photo/72766653-aerial-view-of-osaka-japan-shows-high-rises-and-apartments-flanking-elevated-rail-and-multi-lane-roads-a-park-near-osaka-castle-and-a-river-channel-under-clear-light"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Vecteezy – Osaka aerial view (high-rises &amp; roads)
+                  </a>
+                </li>
+                <li>
+                  <strong>License:</strong>
+                  Used under Vecteezy licensing. Marked as “No Attribution
+                  Required”; credit included here for transparency.
+                </li>
+              </ul>
+            </div>
+
+            <div class="credit-block">
+              <h3 class="credit-title">
+                Time-Lapse Traffic in Osaka – Skyline City
+              </h3>
+              <p class="credit-body">
+                Time-lapse footage of Osaka traffic and skyline, used as B-roll
+                to support narration about the Japanese game industry
+                environment.
+              </p>
+              <ul class="credit-meta">
+                <li>
+                  <strong>Source:</strong>
+                  <a
+                    href="https://www.vecteezy.com/video/2738165-time-lapse-of-traffic-in-osaka-skyline-city-in-japan"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Vecteezy – Time-lapse of traffic in Osaka
+                  </a>
+                </li>
+                <li>
+                  <strong>License:</strong>
+                  Used under Vecteezy licensing. Marked as “No Attribution
+                  Required”; credit included here for transparency.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Hardware & Consoles -->
+          <div class="subgroup">
+            <div class="subgroup-title">Hardware Photography</div>
+
+            <div class="credit-block">
+              <h3 class="credit-title">NEC PC-8800 Series – Hardware Photo</h3>
+              <p class="credit-body">
+                Photo used to illustrate the NEC PC-8800 hardware, in connection
+                with discussion of early Japanese computer platforms.
+              </p>
+              <ul class="credit-meta">
+                <li>
+                  <strong>Source:</strong>
+                  <a
+                    href="https://en.wikipedia.org/wiki/PC-8800_series"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Wikipedia – PC-8800 series
+                  </a>
+                  (photo from linked Flickr)
+                </li>
+                <li>
+                  <strong>Author / Rights:</strong>
+                  By phreakindee –
+                  <a
+                    href="https://www.flickr.com/photos/phreakindee/28416963104/"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Flickr: phreakindee </a
+                  >. Licensed under
+                  <a
+                    href="https://creativecommons.org/licenses/by/1.0/"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    CC BY 1.0 </a
+                  >. Cropped from the original.
+                </li>
+              </ul>
+            </div>
+
+            <div class="credit-block">
+              <h3 class="credit-title">Sega Mega Drive Mini – Product Photo</h3>
+              <p class="credit-body">
+                Photo of the Sega Mega Drive Mini used as a modern visual
+                reference to Sega’s 16-bit legacy.
+              </p>
+              <ul class="credit-meta">
+                <li>
+                  <strong>Source:</strong>
+                  <a
+                    href="https://commons.wikimedia.org/wiki/File:MiNe-M_100-6588U_(48881026217).jpg"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Wikimedia Commons – MiNe-M_100-6588U (48881026217).jpg
+                  </a>
+                </li>
+                <li>
+                  <strong>Author / Rights:</strong>
+                  Originally posted to Flickr by MiNe (sfmine79) at
+                  <a
+                    href="https://flickr.com/photos/8996753@N06/48881026217"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    flickr.com/photos/8996753@N06/48881026217 </a
+                  >. Licensed under
+                  <a
+                    href="https://creativecommons.org/licenses/by/2.0/"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    CC BY 2.0 </a
+                  >.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Manuals, Magazines & PDFs -->
+          <div class="subgroup">
+            <div class="subgroup-title">Manuals, Magazines &amp; PDF Scans</div>
+
+            <div class="credit-block">
+              <h3 class="credit-title">
+                Silpheed (Mega-CD, Japanese) – Manual Scan
+              </h3>
+              <p class="credit-body">
+                Specific page from the Japanese Silpheed manual used to show
+                “Option Weapon” terminology in historical context.
+              </p>
+              <ul class="credit-meta">
+                <li>
+                  <strong>Source:</strong>
+                  <a
+                    href="https://segaretro.org/images/c/cf/Silpheed_MCD_JAP_manual.pdf"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Sega Retro – Silpheed_MCD_JAP_manual.pdf
+                  </a>
+                </li>
+                <li>
+                  <strong>Use:</strong>
+                  Individual page excerpted and shown under a fair use rationale
+                  for educational commentary and comparison to Alisia Dragoon’s
+                  “Option” monsters.
+                </li>
+              </ul>
+            </div>
+
+            <div class="credit-block">
+              <h3 class="credit-title">
+                Alisia Dragoon (Japanese) – Manual / PDF
+              </h3>
+              <p class="credit-body">
+                Japanese manual scans used both as a visual reference and as a
+                primary research source when discussing mechanics like Rolling
+                Bolt.
+              </p>
+              <ul class="credit-meta">
+                <li>
+                  <strong>Source:</strong>
+                  <a
+                    href="https://archive.org/details/Alisia_Dragoon_1992_Game_Arts_JP/page/n17/mode/2up"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Internet Archive – Alisia Dragoon (1992, Game Arts JP) PDF
+                  </a>
+                </li>
+                <li>
+                  <strong>Use:</strong>
+                  Screenshot excerpts appear under a fair use rationale for
+                  educational commentary, translation, and historical analysis.
+                </li>
+              </ul>
+            </div>
+
+            <div class="credit-block">
+              <h3 class="credit-title">
+                GamePro Issue 34 (May 1992) – Alisia Dragoon Review
+              </h3>
+              <p class="credit-body">
+                Cover and interior pages used to illustrate Western review
+                coverage of Alisia Dragoon.
+              </p>
+              <ul class="credit-meta">
+                <li>
+                  <strong>Source:</strong>
+                  <a
+                    href="https://www.retromags.com/files/file/2919-gamepro-issue-034-may-1992"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    RetroMags – GamePro Issue 34 (May 1992)
+                  </a>
+                </li>
+                <li>
+                  <strong>Use:</strong>
+                  Cover and article pages shown under fair use for purposes of
+                  commentary, criticism, and historical documentation.
+                </li>
+              </ul>
+            </div>
+
+            <div class="credit-block">
+              <h3 class="credit-title">
+                Mean Machines Magazine – Alisia Dragoon Review
+              </h3>
+              <p class="credit-body">
+                Review spread used to show reception of Alisia Dragoon in
+                European print media.
+              </p>
+              <ul class="credit-meta">
+                <li>
+                  <strong>Source:</strong>
+                  <a
+                    href="https://archive.org/details/mean-machines-magazine-18/page/n69/mode/2up"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Internet Archive – Mean Machines Magazine Issue 18
+                  </a>
+                </li>
+                <li>
+                  <strong>Use:</strong>
+                  Scanned pages from the Alisia Dragoon article used under fair
+                  use for commentary and historical context.
+                </li>
+              </ul>
+            </div>
+
+            <div class="credit-block">
+              <h3 class="credit-title">
+                BEEP Megadrive – 1991 / 1992 Magazine Scans
+              </h3>
+              <p class="credit-body">
+                Various BEEP Megadrive scans used both for on-screen visuals and
+                background research into Alisia Dragoon’s coverage.
+              </p>
+              <ul class="credit-meta">
+                <li>
+                  <strong>Source Collection:</strong>
+                  <a
+                    href="https://archive.org/details/beep-megadrive"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Internet Archive – BEEP Megadrive collection
+                  </a>
+                </li>
+                <li>
+                  <strong>Use:</strong>
+                  Individual pages and clippings shown under fair use for
+                  educational commentary and historical analysis.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Daicon & Related -->
+          <div class="subgroup">
+            <div class="subgroup-title">DAICON &amp; Related Imagery</div>
+
+            <div class="credit-block">
+              <h3 class="credit-title">DAICON III Still</h3>
+              <p class="credit-body">
+                Still frame used when discussing DAICON III, Daicon Film, and
+                the early creative lineage that preceded Gainax.
+              </p>
+              <ul class="credit-meta">
+                <li>
+                  <strong>Source:</strong>
+                  <a
+                    href="https://timeldred.com/daiconchronicles3/"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Tim Eldred – DAICON Chronicles
+                  </a>
+                </li>
+                <li>
+                  <strong>Rights:</strong>
+                  DAICON III still © 1981 Daicon Film. Used for educational
+                  commentary under a fair use rationale. Cropped from the
+                  original as presented on timeldred.com.
+                </li>
+              </ul>
+            </div>
+
+            <div class="credit-block">
+              <h3 class="credit-title">DAICON IV Still</h3>
+              <p class="credit-body">
+                Still frame used in segments addressing DAICON IV and its
+                influence on later Gainax projects.
+              </p>
+              <ul class="credit-meta">
+                <li>
+                  <strong>Source:</strong>
+                  <a
+                    href="https://timeldred.com/daiconchronicles3/"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Tim Eldred – DAICON Chronicles
+                  </a>
+                </li>
+                <li>
+                  <strong>Rights:</strong>
+                  DAICON IV still © 1983 Daicon Film. Used for educational
+                  commentary under fair use. Cropped from the original.
+                </li>
+              </ul>
+            </div>
+
+            <div class="credit-block">
+              <h3 class="credit-title">Figure King Issue 307 – Cover Still</h3>
+              <p class="credit-body">
+                Cover image used in the context of DAICON coverage and modern
+                retrospectives on that work.
+              </p>
+              <ul class="credit-meta">
+                <li>
+                  <strong>Source:</strong>
+                  <a
+                    href="https://timeldred.com/daiconchronicles3/"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Tim Eldred – DAICON Chronicles
+                  </a>
+                </li>
+                <li>
+                  <strong>Rights:</strong>
+                  Figure King Issue 307 cover © 2023 World Photo Press / Figure
+                  King. Used for educational commentary under fair use. Cropped
+                  from original presentation on timeldred.com.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Web Screenshots & Misc -->
+          <div class="subgroup">
+            <div class="subgroup-title">
+              Web Screenshots &amp; Miscellaneous Visuals
+            </div>
+
+            <div class="credit-block">
+              <h3 class="credit-title">
+                US Inflation Calculator – Site Screenshot
+              </h3>
+              <p class="credit-body">
+                Screenshot used to illustrate the real-world value of game
+                prices at the time of Alisia Dragoon’s release.
+              </p>
+              <ul class="credit-meta">
+                <li>
+                  <strong>Source:</strong>
+                  <a
+                    href="https://www.usinflationcalculator.com/"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    usinflationcalculator.com
+                  </a>
+                </li>
+                <li>
+                  <strong>Use:</strong>
+                  Screenshot used under fair use for educational commentary and
+                  economic context.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Information Sources -->
+        <section id="information-sources">
+          <h2>Information Sources</h2>
+          <p class="section-subtitle">
+            The following works, databases, magazines, and articles were used
+            for research, verification, and contextual framing of the video.
+            Many of these sources are also shown visually in the video as noted
+            above.
+          </p>
+
+          <div class="subgroup">
+            <div class="subgroup-title">Studios, History &amp; Context</div>
+            <ul class="credit-meta">
+              <li>
+                <strong>AudioVisualDatabase – Gainax:</strong>
+                <a
+                  href="https://www.avid.wiki/Gainax"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  https://www.avid.wiki/Gainax
+                </a>
+              </li>
+              <li>
+                <strong>AudioVisualDatabase – Daicon Film:</strong>
+                <a
+                  href="https://www.avid.wiki/Daicon_Film"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  https://www.avid.wiki/Daicon_Film
+                </a>
+              </li>
+              <li>
+                <strong>“The Secret History of Gainax” – Zimmerit:</strong>
+                <a
+                  href="https://www.zimmerit.moe/secret-history-of-gainax/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  https://www.zimmerit.moe/secret-history-of-gainax/
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="subgroup">
+            <div class="subgroup-title">Magazines, Reviews &amp; Ratings</div>
+            <ul class="credit-meta">
+              <li>
+                <strong>GamePro Issue 34 (May 1992):</strong>
+                Review and coverage of <em>Alisia Dragoon</em>.
+                <a
+                  href="https://www.retromags.com/files/file/2919-gamepro-issue-034-may-1992"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  https://www.retromags.com/files/file/2919-gamepro-issue-034-may-1992
+                </a>
+              </li>
+              <li>
+                <strong>Mean Machines Magazine (Issue 18):</strong>
+                Alisia Dragoon review feature.
+                <a
+                  href="https://archive.org/details/mean-machines-magazine-18/page/n69/mode/2up"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  https://archive.org/details/mean-machines-magazine-18/page/n69/mode/2up
+                </a>
+              </li>
+              <li>
+                <strong>BEEP Megadrive – 1991 &amp; 1992 Issues:</strong>
+                Various scans used to track coverage and advertising for Alisia
+                Dragoon and related titles.
+                <a
+                  href="https://archive.org/details/beep-megadrive"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  https://archive.org/details/beep-megadrive
+                </a>
+              </li>
+              <li>
+                <strong>Weekly Famitsu – Ratings Data:</strong>
+                Used to reference Famitsu review scores and rankings.
+                <a
+                  href="https://segaretro.org/Weekly_Famitsu/Ratings"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  https://segaretro.org/Weekly_Famitsu/Ratings
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="subgroup">
+            <div class="subgroup-title">Game-Specific References</div>
+            <ul class="credit-meta">
+              <li>
+                <strong>Alisia Dragoon (Japanese Manual PDF):</strong>
+                Original Japanese manual used for mechanical details,
+                terminology, and art reference.
+                <a
+                  href="https://archive.org/details/Alisia_Dragoon_1992_Game_Arts_JP/page/n17/mode/2up"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  https://archive.org/details/Alisia_Dragoon_1992_Game_Arts_JP
+                </a>
+              </li>
+              <li>
+                <strong>Thexder – Wikipedia:</strong>
+                Background information on earlier Game Arts titles and their
+                design lineage.
+                <a
+                  href="https://en.wikipedia.org/wiki/Thexder"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  https://en.wikipedia.org/wiki/Thexder
+                </a>
+              </li>
+              <li>
+                <strong
+                  >Game Arts – Logo &amp; Company Info (Wikimedia):</strong
+                >
+                Additional reference for branding and corporate history.
+                <a
+                  href="https://commons.wikimedia.org/wiki/File:Game_Arts_logo.svg"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  https://commons.wikimedia.org/wiki/File:Game_Arts_logo.svg
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="subgroup">
+            <div class="subgroup-title">
+              Interviews &amp; Primary Commentary
+            </div>
+            <ul class="credit-meta">
+              <li>
+                <strong
+                  >“Alisia Dragoon – Developer Interview” –
+                  Shmuplations:</strong
+                >
+                Translated interview with key staff, used extensively to
+                understand development intent, mechanics, and design philosophy.
+                <a
+                  href="https://shmuplations.com/alisiadragoon/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  https://shmuplations.com/alisiadragoon/
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Notes & Contact -->
+        <section id="notes">
+          <h2>Notes &amp; Contact</h2>
+          <p class="section-subtitle">
+            This page is intended to transparently document how visual and
+            textual materials were used in the video and to give proper credit
+            wherever possible.
+          </p>
+
+          <p class="note">
+            <strong>Fair Use &amp; Licensing:</strong><br />
+            Descriptions on this page are based on the information provided by
+            the original hosts (e.g., Wikimedia Commons, Internet Archive,
+            RetroMags, Vecteezy) at the time of research. Inclusion here is not
+            a substitute for legal advice. All third-party content remains the
+            property of its respective rights holders and is used for purposes
+            of commentary, criticism, scholarship, and historical documentation.
+          </p>
+
+          <p class="note">
+            If you are a rights holder or contributor and would like a
+            correction, additional credit, or removal of a specific asset used
+            on screen, please reach out and I will do my best to address it
+            quickly.
+          </p>
+
+          <p class="note">
+            Contact:
+            <code>[add your preferred contact email or link here]</code>
+          </p>
+        </section>
+      </main>
+
+      <footer>
+        <div class="divider"></div>
+        <div>
+          © 2025 ATRYS.YT. All trademarks and copyrights are retained by their
+          respective owners.
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      (function () {
+        const buttons = document.querySelectorAll("[data-theme-choice]");
+        const body = document.body;
+
+        function setTheme(theme) {
+          body.setAttribute("data-theme", theme);
+          buttons.forEach((btn) => {
+            const active = btn.getAttribute("data-theme-choice") === theme;
+            btn.setAttribute("aria-pressed", active ? "true" : "false");
+          });
+        }
+
+        buttons.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            const theme = btn.getAttribute("data-theme-choice") || "default";
+            setTheme(theme);
+          });
+        });
+
+        // Initial theme
+        setTheme("default");
+      })();
+    </script>
+  </body>
+</html>
