@@ -9,41 +9,12 @@ function initialize() {
   addSubheader("on-screen", "Logos & Marks");
 
   addCreditToSection("on-screen", {
-    title: "Square Enix Logo",
-    description:
-      "Vector version of the Square Enix wordmark shown in the video in reference to Game Arts’ later corporate history.",
-    attributionText:
-      "Vector by User:GaeMFreeK, based on the Square Enix logo. Logo © Square Enix. The Commons entry describes this as a simple logo / familiar symbol; see the source page for full details.",
-    source: "https://commons.wikimedia.org/wiki/File:Square_Enix_logo.svg",
-  });
-
-  addCreditToSection("on-screen", {
-    title: "Koei Tecmo Logo",
-    description:
-      "Company logo referenced in the context of Japanese publishers and corporate relationships.",
-    attributionText:
-      "Logo © Koei Tecmo Holdings. File is listed as public domain on Wikimedia Commons; see the source page for details.",
-    source:
-      "https://commons.wikimedia.org/wiki/File:Koei_Tecmo_Holdings_logo.svg",
-  });
-
-  addCreditToSection("on-screen", {
     title: "Game Arts Logo",
     description:
       "Company logo shown when introducing Game Arts and their catalog of work.",
     attributionText:
       "Logo © Game Arts / respective rights holders. See the Commons page for licensing notes and additional details.",
     source: "https://commons.wikimedia.org/wiki/File:Game_Arts_logo.svg",
-  });
-
-  addCreditToSection("on-screen", {
-    title: "Bandai Namco Logo",
-    description:
-      "Bandai Namco logo used when discussing the broader landscape of Japanese game publishers.",
-    attributionText:
-      "Logo © Bandai Namco Entertainment Inc. Used for historical and contextual commentary.",
-    source:
-      "https://download.logo.wine/logo/Bandai_Namco_Entertainment/Bandai_Namco_Entertainment-Logo.wine.png",
   });
 
   addCreditToSection("on-screen", {
@@ -86,16 +57,6 @@ function initialize() {
   });
 
   addCreditToSection("on-screen", {
-    title: "Thexder 2 / Fire Hawk: Thexder – The Second Contact (Box Art)",
-    description:
-      "Box art used when covering Game Arts’ earlier work and the lineage that leads up to Alisia Dragoon.",
-    attributionText:
-      "Box art by Sierra On-Line. The Wikimedia file is licensed under CC BY-SA 4.0.",
-    source:
-      "https://upload.wikimedia.org/wikipedia/commons/8/8c/SierraOnLine-Box-Thexder2.jpg",
-  });
-
-  addCreditToSection("on-screen", {
     title: "Alisia Dragoon (Japanese Mega Drive) – Box Art",
     description:
       "Japanese box art used prominently when discussing Alisia Dragoon’s release and visual identity.",
@@ -123,7 +84,7 @@ function initialize() {
   });
 
   addCreditToSection("on-screen", {
-    title: "Thunder Force IV – Box Art",
+    title: "Thunder Force IV (Lightning Force) – Box Art",
     description:
       "Appears when comparing Alisia Dragoon to other visually striking action and shooting games on Mega Drive.",
     attributionText:
@@ -142,26 +103,6 @@ function initialize() {
 
   // --- City / Osaka Footage & Photos (Vecteezy) ---
   addSubheader("on-screen", "City Footage & Osaka Aerials");
-
-  addCreditToSection("on-screen", {
-    title: "Osaka Aerial Photo – Kyocera Dome & Rail Lines",
-    description:
-      "Wide aerial view of Osaka used as a backdrop while discussing the Japanese game industry context.",
-    attributionText:
-      "Downloaded from Vecteezy. Marked as “No Attribution Required”; included here for transparency.",
-    source:
-      "https://www.vecteezy.com/photo/72766649-a-wide-aerial-view-shows-osaka-japan-with-kyocera-dome-osaka-near-center-rail-lines-and-gridded-streets-mid-rise-blocks-and-high-rises-in-soft-hazy-afternoon-light",
-  });
-
-  addCreditToSection("on-screen", {
-    title: "Osaka Aerial Photo – High-rises, Roads & River Channel",
-    description:
-      "Aerial view of Osaka cityscape used as establishing footage alongside narration about Japanese studios and publishers.",
-    attributionText:
-      "Downloaded from Vecteezy. Marked as “No Attribution Required”; included here for transparency.",
-    source:
-      "https://www.vecteezy.com/photo/72766653-aerial-view-of-osaka-japan-shows-high-rises-and-apartments-flanking-elevated-rail-and-multi-lane-roads-a-park-near-osaka-castle-and-a-river-channel-under-clear-light",
-  });
 
   addCreditToSection("on-screen", {
     title: "Osaka Time-Lapse Traffic Footage",
@@ -250,29 +191,11 @@ function initialize() {
   addSubheader("on-screen", "DAICON & Related Imagery");
 
   addCreditToSection("on-screen", {
-    title: "DAICON III Still",
-    description:
-      "Still frame used when discussing DAICON III, Daicon Film, and the creative lineage leading up to Gainax.",
-    attributionText:
-      "DAICON III still © 1981 Daicon Film. Source presentation via Tim Eldred’s DAICON Chronicles; cropped for use. Used under a fair use rationale for educational commentary.",
-    source: "https://timeldred.com/daiconchronicles3/",
-  });
-
-  addCreditToSection("on-screen", {
     title: "DAICON IV Still",
     description:
       "Still frame used for coverage of DAICON IV and its influence on later Gainax projects.",
     attributionText:
       "DAICON IV still © 1983 Daicon Film. Source presentation via Tim Eldred’s DAICON Chronicles; cropped for use. Used under a fair use rationale for educational commentary.",
-    source: "https://timeldred.com/daiconchronicles3/",
-  });
-
-  addCreditToSection("on-screen", {
-    title: "Figure King Issue 307 – Cover Still",
-    description:
-      "Cover image shown in the context of DAICON coverage and modern retrospectives.",
-    attributionText:
-      "Figure King Issue 307 cover © 2023 World Photo Press / Figure King. Used under a fair use rationale for educational commentary.",
     source: "https://timeldred.com/daiconchronicles3/",
   });
 
@@ -406,3 +329,4 @@ function initialize() {
 
 // Call once on load
 initialize();
+
